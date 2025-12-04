@@ -15,6 +15,10 @@ a {
   color: unset;
 }
 
+button {
+  cursor: pointer;
+}
+
 a:hover {
   border-bottom: 1px solid #e5e7eb;
 }
@@ -60,7 +64,7 @@ h2 {
 }
 
 .sign-up,
-.callToAction {
+.callToAction .content {
   background-color: #3882f6;
 }
 
@@ -80,9 +84,7 @@ h2 {
   font-weight: 300;
 }
 
-.hero,
-main,
-footer {
+.hero {
   padding: 0 250px;
 }
 
@@ -106,4 +108,72 @@ button.sign-up {
   color: white;
   border-radius: 8px;
   border: unset;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 50px;
+}
+
+.card-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.card img {
+  width: 200px;
+  border-radius: 5px;
+}
+
+.card {
+  text-align: center;
+}
+
+.card p {
+  margin-top: 5px;
+}
+
+.quote {
+  text-align: center;
+  padding: 100px 250px;
+}
+
+.quote .message {
+  font-size: 50px;
+}
+
+.quote .author {
+  text-align: right;
+  font-weight: bold;
+}
+
+.callToAction {
+  background-color: white;
+  padding: 85px 150px;
+}
+
+.callToAction .content {
+  padding: 30px 65px;
+  width: 950px;
+  margin: 0 auto;
+  border-radius: 5px;
+  color: white;
+}
+
+.callToAction .content button {
+  margin-left: auto;
+  padding: 5px 35px;
+  background-color: #3882f6;
+  border-radius: 5px;
+  border: 2px solid #f9faf8;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  color: #e5e7eb;
+  padding: 25px 0;
 }
